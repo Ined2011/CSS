@@ -1,0 +1,60 @@
+/* h1{
+    color: blue;
+} */
+/* SELECTORES BASICOS */
+/* selector por nombre de etiqueta */
+/* span{
+    text-align: center;  /*alinear texto*/
+    /* font-size: 50px; /*aumentar el tamaño de la letra*/
+    /*display: block; /*cambiando el comportamiento*/
+/*} */ 
+/* Selectores de identificador */
+/* id(#) clase(.) */
+/* #span2{
+    color: rgb(123, 71, 255);
+}
+.color-rojo{
+   background-color:red;
+}
+.letra-cusrsiva{
+    font-style: italic;
+    font-weight: bold;
+} */
+
+/* Selectores por jerarquia */
+/* selector hijo directo (>) */
+/* div > p{
+    color: rgb(165, 20, 158);
+    font-size: 25px;
+}
+div > span > p{
+    background-color: chartreuse;
+} */
+/* selector hijo indirecto( ) */
+/* div p{
+    color: crimson;
+    font-size: 25px;
+} */
+ /* Selectores abyacentes ó hermanos */
+ /* selector primer hermano (+) */
+/* div + p + p {
+    color:red ;
+    font-size: 25px;
+} */
+/* selector todos los hermanos (~) */
+/* div ~ p{
+    color:blue;
+    font-size: 25px;
+} */ */
+
+/* Selector todo (*) */
+/* forma 1 seleccionar todo */
+/* div *{
+
+    color: rgba(6, 247, 247, 0.893);
+} */
+
+* p{
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+} */
