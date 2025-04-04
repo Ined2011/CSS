@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de Selectores CSS</title>
+  <style>
+    /* 1. Selector de etiqueta */
+    p {
+      color: blue;
+    }
+
+    /* 2. Selector de ID */
+    #titulo {
+      font-size: 24px;
+      color: darkred;
+    }
+
+    /* 3. Selector de clase */
+    .destacado {
+      background-color: yellow;
+    }
+
+    /* 4. Selector múltiple (coma) */
+    h1, h2 {
+      font-family: Arial;
+    }
+
+    /* 5. Selector de atributo */
+    input[type="text"] {
+      border: 2px solid green;
+    }
+
+    /* 6. Selector universal */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* 7. Selector descendente (espacio) */
+    div p {
+      font-weight: bold;
+    }
+
+    /* 8. Selector hijo directo (>) */
+    ul > li {
+      color: purple;
+    }
+
+    /* 9. Selector hermano adyacente (+) */
+    h2 + p {
+      color: orange;
+    }
+
+    /* 10. Selector de hermanos generales (~) */
+    h2 ~ p {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="titulo">Bienvenido a los Selectores CSS</h1>
+
+  <h2>Subtítulo con Fuente Arial</h2>
+  <p>Este párrafo es hermano inmediato del h2 (color naranja).</p>
+  <p>Este párrafo también es hermano del h2 (estilo itálico).</p>
+
+  <p class="destacado">Este párrafo tiene una clase llamada "destacado".</p>
+
+  <div>
+    <p>Este párrafo está dentro de un div (negrita).</p>
+    <span>
+      <p>También este, aunque esté anidado dentro de un span.</p>
+    </span>
+  </div>
+
+  <ul>
+    <li>Elemento 1 (hijo directo de ul)</li>
+    <li>Elemento 2 (hijo directo de ul)</li>
+  </ul>
+
+  <input type="text" placeholder="Campo de texto con borde verde">
+  <input type="password" placeholder="Este no tiene borde verde">
+
+</body>
+</html>
