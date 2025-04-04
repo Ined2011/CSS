@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo 2 - Selectores CSS</title>
+  <style>
+    /* 1. Selector de etiqueta */
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    /* 2. Selector de ID */
+    #parrafoPrincipal {
+      font-size: 18px;
+      background-color: #f0f0f0;
+    }
+
+    /* 3. Selector de clase */
+    .importante {
+      border-left: 5px solid red;
+      padding-left: 10px;
+    }
+
+    /* 4. Selector múltiple (coma) */
+    h2, h3 {
+      color: teal;
+    }
+
+    /* 5. Selector de atributo */
+    a[target="_blank"] {
+      text-decoration: underline;
+      color: green;
+    }
+
+    /* 6. Selector universal */
+    * {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 7. Selector descendente (espacio) */
+    section p {
+      margin-top: 10px;
+    }
+
+    /* 8. Selector hijo directo (>) */
+    nav > ul {
+      background-color: #ddd;
+      padding: 10px;
+    }
+
+    /* 9. Selector hermano adyacente (+) */
+    h2 + p {
+      color: tomato;
+    }
+
+    /* 10. Selector hermanos generales (~) */
+    h2 ~ ul {
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ejemplo 2 de Selectores CSS</h1>
+
+  <p id="parrafoPrincipal" class="importante">
+    Este es el párrafo principal con un ID y una clase aplicada.
+  </p>
+
+  <nav>
+    <ul>
+      <li>Inicio</li>
+      <li>Servicios</li>
+      <li>Contacto</li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Acerca de nosotros</h2>
+    <p>Este párrafo es adyacente al h2, por eso es de color tomate.</p>
+    <p>Este párrafo está en la misma sección, pero no es adyacente inmediato.</p>
+
+    <ul>
+      <li>Item relacionado</li>
+      <li>Otro item relacionado</li>
+    </ul>
+  </section>
+
+  <h3>Enlaces útiles</h3>
+  <a href="https://ejemplo.com" target="_blank">Visita nuestro sitio</a><br>
+  <a href="https://otro.com">Enlace sin target</a>
+
+</body>
+</html>
