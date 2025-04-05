@@ -1,0 +1,30 @@
+div{
+    font-size: 20px; /*tamaño de fuente*/
+}
+.caja-1,
+.caja-2,
+.caja-3 {
+    display: inline-block; /*bloque en línea*/
+    width: 100px; /*ancho*/
+    height: 100px; /*alto*/
+  background-color: #c68ee2; /*color de fondo*/
+  
+
+}                                                
+.caja-2{
+    display: none;
+    /*margin: 50px; /*margen*/
+    /*float:right; /*flotante*/
+
+}
+.cajita {
+
+    font-size: 2em;
+ width: 50px; /*ancho*/
+    height: 50px; /*alto*/
+    background-color: blue; /*color de fondo*/
+
+    border-top-right-radius: 5px solid rgb(177, 249, 8); /*borde*/
+    border-bottom-right-radius: 50%; /*bordes redondeados*/
+
+}
