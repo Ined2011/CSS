@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #fff;
+}
+
+header, footer, nav, aside, main, article, section {
+  border-radius: 10px;
+  padding: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Colores según imagen */
+header {
+  background-color: #d9534f;
+  margin-bottom: 10px;
+}
+
+.contenedor-principal {
+  display: flex;
+  gap: 10px;
+}
+
+/* MAIN */
+main {
+  flex: 3;
+  background-color: #2196f3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+main article:first-of-type {
+  background-color: #66bb6a;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main article:first-of-type section {
+  background-color: #a5d6a7;
+  padding: 10px;
+}
+
+main article:last-of-type {
+  background-color: #43a047;
+  padding: 20px;
+}
+
+main footer {
+  background-color: #ce93d8;
+  padding: 15px;
+}
+
+/* NAV + ASIDE */
+.lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav {
+  background-color: #fdfd96;
+  padding: 20px;
+}
+
+aside {
+  background-color: #00acc1;
+  padding: 20px;
+}
+
+/* FOOTER página */
+.footer-pagina {
+  background-color: #d7ccc8;
+  margin-top: 10px;
+  padding: 15px;
+}
