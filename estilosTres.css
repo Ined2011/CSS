@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 20px;
+  background-color: #fff;
+}
+
+header, footer, nav, aside, main, article, section {
+  border-radius: 50px;
+  padding: 10px;
+  color: #0e0d0d;
+  text-align:left;
+  font-style: italic; 
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Colores según imagen */
+header {
+  background-color: #d9534f;
+  margin-bottom: 10px;
+  border: #3904f7 solid 2px;
+  border-radius: 10px;
+  border-width: medium;
+  border-top-style: solid;
+}
+
+.contenedor-principal {
+  display: flex;
+  gap: 10px;
+}
+
+/* MAIN */
+main {
+  flex: 3;
+  background-color: #2196f3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+main article:first-of-type {
+  background-color: #155e18;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 0capsule;
+  border-style: solid;
+}
+
+main article:first-of-type section {
+  background-color: #549957;
+  padding: 10px;
+  border-style: solid;
+  border-width: medium; 
+  border-style: inset;
+  text-align: left;
+}
+
+main article:last-of-type {
+  background-color: #43a047;
+  padding: 80px;
+  border: #0e0d0d solid 2px;
+  border-radius: 10px;
+  font-size: small;
+
+}
+
+main footer {
+  background-color: #ce93d8;
+  padding: 15px;
+  border: #0e0d0d solid 2px;
+  border-radius: 10px;
+  border-width: medium;
+  border-style: solid;
+}
+
+/* NAV + ASIDE */
+.lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;  
+  
+ 
+}
+
+nav {
+  background-color: #fdfd96;
+  padding: 20px;
+  border: #d9534f solid 2px;
+  border-radius: 10px;
+}
+
+aside {
+  background-color: #00acc1;
+  padding: 20px;
+  border: #43a047 solid 2px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* FOOTER página */
+.footer-pagina {
+  background-color: #9b38c2c0;
+  margin-top: 10px;
+  padding: 15px;
+  border-top-width: 0capsule;
+  border-top-style: solid;
+}
