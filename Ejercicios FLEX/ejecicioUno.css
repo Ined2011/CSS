@@ -1,0 +1,75 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Menú */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Logo y texto */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  width: 100px;
+  height: auto;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/* Navegación */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #666;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Idioma */
+.language-switch {
+  display: flex;
+  gap: 10px;
+}
+
+.language-switch a {
+  background-color: #888;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 0.8em;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.language-switch a:hover {
+  background-color: #555;
+}
