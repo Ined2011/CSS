@@ -1,0 +1,36 @@
+.circle{
+    width: 100px;
+    height: 100px;
+    /*border-radius: 50%;*/
+    background-color: blue;
+
+
+    /*animation: to-red 2ms ease-in-out infinite;*/
+animation: rotate 1s ease-in-out infinite, to-red 2s ease-in-out infinite;
+    
+
+
+}
+
+@keyframes to-red {
+    0% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
