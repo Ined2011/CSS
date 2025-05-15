@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf6;
+  color: #2b2b2b;
+}
+
+.cabecera {
+  background-color: #fbe8d3;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.header {
+  background-color: #ffccbc;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dish {
+  background-color: #ffe6d4;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dish img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cta {
+  background-color: #dcedc8;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.cta img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* 📱 Mobile (default) */
+@media (max-width: 599px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+
+/* 📱➡️ Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .dish {
+    width: 48%;
+  }
+
+  .dish.d3 {
+    width: 100%;
+  }
+}
+
+/* 💻 Desktop */
+@media (min-width: 1024px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .dish {
+    width: 32%;
+  }
+}
